@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg">
+        <div class="calculator">
+            <div class="inp">
+                <h1>calculator</h1><div class="hr"></div>
+                <input type="text" disabled class="input1" name="" id="input" placeholder="0">
+            </div>
+            <div class="func">
+                <table>
+                    <tr>
+                        <td style="background-color: tomato;border-radius: 20px;" onclick="dlt()">D</td>
+                        <td class="opt" onclick="number('/')">/</td>
+                        <td class="opt" onclick="number('*')">*</td>
+                        <td class="opt" onclick="number('-')">-</td>
+                    </tr>
+                    <tr>
+                        <td onclick="number('7')">7</td>
+                        <td onclick="number('8')">8</td>
+                        <td onclick="number('9')">9</td>
+                        <td rowspan="2" class="opt" onclick="number('+')">+</td>
+                    </tr>
+                    <tr>
+                        <td onclick="number('4')">4</td>
+                        <td onclick="number('5')">5</td>
+                        <td onclick="number('6')">6</td>
+                        
+                    </tr>
+                    <tr>
+                        <td onclick="number('1')">1</td>
+                        <td onclick="number('2')">2</td>
+                        <td onclick="number('3')">3</td>
+                        <td rowspan="2" class="equal" onclick="result()" >=</td>
+                    </tr>
+                    <tr>
+                        <td onclick="number('.')">.</td>
+                        <td onclick="number('0')">0</td>
+                        <td onclick="clearInput()">C</td>
+                        
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="app.js"></script>
+
+</html>
